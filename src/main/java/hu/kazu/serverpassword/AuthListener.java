@@ -33,7 +33,7 @@ public class AuthListener implements Listener {
 
     static void clearLockEffects(Player p) {
         p.removePotionEffect(PotionEffectType.BLINDNESS);
-        p.removePotionEffect(PotionEffectType.SLOW);
+        p.removePotionEffect(PotionEffectType.SLOWNESS);
         try { p.setWalkSpeed(0.2f); } catch (Exception ignored) {}
         try { p.setFlySpeed(0.1f); } catch (Exception ignored) {}
         p.setAllowFlight(false);
@@ -48,7 +48,7 @@ public class AuthListener implements Listener {
             p.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 1, true, false, false));
         }
         if (plugin.effSlowness()) {
-            p.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, Integer.MAX_VALUE, 255, true, false, false));
+            p.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, Integer.MAX_VALUE, 255, true, false, false));
         }
         try { p.setWalkSpeed(0f); } catch (Exception ignored) {}
         try { p.setFlySpeed(0f); } catch (Exception ignored) {}
