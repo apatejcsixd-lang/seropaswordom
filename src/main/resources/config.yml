@@ -1,0 +1,14 @@
+password: "valtsd-meg"
+max-attempts: 3
+kick-on-max: true
+messages:
+  prompt: "&eÍrd be: &6/login <jelszó>&e a folytatáshoz."
+  success: "&aSikeres bejelentkezés! Jó játékot!"
+  wrong: "&cHibás jelszó!"
+  locked: "&cAmíg nem jelentkezel be, semmit sem tehetsz!"
+  kicked: "&cTúl sok hibás próbálkozás."
+effects:
+  blindness: true
+  slowness: true
+  disable-fly: true
+require-every-join: true
